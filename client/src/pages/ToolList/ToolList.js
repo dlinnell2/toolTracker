@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import API from '../../utils/API';
 import { Container, Col, Row } from '../../components/Grid'
 import { List, ListItem } from "../../components/List";
+import Jumbotron from "../../components/Jumbotron/Jumbotron";
 
 class ToolList extends Component {
 
@@ -45,8 +46,11 @@ class ToolList extends Component {
   render() {
     return (
       <Container>
+        <Jumbotron>
+          <h1>Choose a tool below to check out</h1>
+        </Jumbotron>
         <Row>
-          <Col size='md-12'>
+          <Col size='md-4'>
             {this.checkToolList()}
           </Col>
         </Row>
