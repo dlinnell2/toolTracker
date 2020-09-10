@@ -10,7 +10,7 @@ const App = () => (
         <Route exact path = "/admin">
           <Admin />
         </Route>
-        <Route path = "/">
+        <Route exact path = "/">
           <ToolList />
         </Route>
       </Switch>
